@@ -1,0 +1,1 @@
+Digital Macroeconomic Pulse Index 
