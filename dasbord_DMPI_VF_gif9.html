@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Digital Macroeconomic Pulse Index</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/clipboard/clipboard.min.js"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-html/quarto.js"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-html/popper.min.js"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-html/anchor.min.js"></script>
+<link href="dasbord_DMPI_VF_gif9_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="dasbord_DMPI_VF_gif9_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="dasbord_DMPI_VF_gif9_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="dasbord_DMPI_VF_gif9_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="dasbord_DMPI_VF_gif9_files/libs/bootstrap/bootstrap-1fe56d6693da723f97b913ef6987e799.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/stickythead.js"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/pdfmake.min.js" kdttablesentinel="true"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/vfs_fonts.js" kdttablesentinel="true"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/components.js"></script>
+<link href="dasbord_DMPI_VF_gif9_files/libs/quarto-dashboard/datatables.min.css" rel="stylesheet" kdttablesentinel="true">
+<link href="dasbord_DMPI_VF_gif9_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/plotly-binding-4.11.0/plotly.js"></script>
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/typedarray-0.1/typedarray.min.js"></script>
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+<link href="dasbord_DMPI_VF_gif9_files/libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+
+<link href="dasbord_DMPI_VF_gif9_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/bslib-component-js-0.10.0/components.min.js"></script>
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/bslib-component-js-0.10.0/web-components.min.js" type="module"></script>
+
+<link href="dasbord_DMPI_VF_gif9_files/libs/bslib-component-css-0.10.0/components.css" rel="stylesheet">
+
+<script src="dasbord_DMPI_VF_gif9_files/libs/bslib-tag-require-0.10.0/tag-require.js"></script>
+
+
+
+<link rel="stylesheet" href="styles7.css">
+</head>
+
+<body class="quarto-dashboard dashboard-fill dashboard-sidebar fullcontent">
+
+<header id="quarto-dashboard-header">
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+
+
+    <div class="navbar-brand-container">       
+    <a href="#"><img src="images/dpmicercle2.png" alt="" class="navbar-logo d-inline-block"></a>
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">Digital Macroeconomic Pulse Index</a></div>
+        
+        
+      </div>
+    </div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-a-propos" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#a-propos" data-scrolling="false" href="#a-propos" aria-controls="a-propos" aria-selected="true"><span class="nav-link-text">A propos</span></a></li><li class="nav-item" role="presentation"><a id="tab-inflation-iai" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#inflation-iai" data-scrolling="false" href="#inflation-iai" aria-controls="inflation-iai" aria-selected="false"><span class="nav-link-text">Inflation (IAI)</span></a></li><li class="nav-item" role="presentation"><a id="tab-développement-bdip" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#développement-bdip" data-scrolling="false" href="#développement-bdip" aria-controls="développement-bdip" aria-selected="false"><span class="nav-link-text">Développement (BDIP)</span></a></li></ul><div class="quarto-dashboard-links"><a class="quarto-dashboard-link" href="undefined"></a></div></div></div>
+</nav>
+</header>
+<div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
+
+<div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div id="a-propos" class="dashboard-page tab-pane show active html-fill-item html-fill-container dashboard-sidebar-container" data-orientation="row" aria-labelledby="tab-a-propos">
+<div class="bslib-sidebar-layout html-fill-item html-fill-container" data-bslib-sidebar-open="desktop" data-bslib-sidebar-init="true" data-bslib-sidebar-border="false" data-bslib-sidebar-border-radius="false"><div class="main html-fill-container html-fill-item"><div class="sidebar-content html-fill-item html-fill-container">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div style="max-width: 1000px; margin: auto;" class="html-fill-item html-fill-container">
+<p style="text-align: center;color: #1f97b6;
+  letter-spacing: 1px;font-size: 30px;font-weight:500;">
+<strong>Digital Macroeconomic Pulse Index (DMPI)</strong>
+</p>
+<p style="text-align: center;color: #1f97b6;
+  letter-spacing: 1px;font-size: 25px;font-weight:500;">
+<strong>Indice numérique avancé de conjoncture macroéconomique</strong>
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Le <strong>Digital Macroeconomic Pulse Index (DMPI)</strong> est un indicateur innovant qui mesure l’évolution de l’économie ivoirienne à partir des <strong>données numériques et du comportement digital des agents économiques</strong>. Il vise à fournir un signal précoce sur la dynamique macroéconomique en exploitant des informations disponibles en temps réel.
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+<strong>1. Contexte </strong>
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Au cours de la dernière décennie, la Côte d’Ivoire a connu une <strong>transformation digitale rapide</strong>, soutenue par des investissements importants dans les infrastructures de télécommunication et les technologies numériques. Selon les statistiques nationales disponibles dans le <a href="https://www.gouv.ci/uploads/publications/175819822877.pdf">Bilan 2011-2025 du Gouvernement</a>, le pays comptait en 2025 :
+</p>
+<ul style="text-align: justify; font-size: 20px; line-height: 1.8;margin-left: 20px;">
+<li>
+<strong>60,5 millions d’abonnés à la téléphonie mobile</strong>, (pour une population totale de plus de 29,4 millions d’habitants <a href="https://www.anstat.ci/assets/publications/files/File_val_indicateur1701358694.pdf">selon le RGPH 2021</a>) ;
+</li>
+<li>
+<strong>35,5 millions d’abonnements à internet mobile ;</strong>
+</li>
+<li>
+un <strong>taux de pénétration de l’internet mobile supérieur à 185 %.</strong>
+</li>
+</ul>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Cette expansion du numérique s’accompagne d’une production massive de <strong>données comportementales en temps réel</strong>, issues notamment des recherches en ligne et des contenus médiatiques. Dans plusieurs économies avancées, ces données sont désormais utilisées pour construire des <strong>indicateurs à haute fréquence</strong>, analyser le sentiment économique et réaliser des <strong>prévisions immédiates (nowcasting)</strong> lorsque les statistiques officielles ne sont pas encore disponibles.
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Cependant, à ce jour, un grand nombre de pays africains ne disposent pas d’un cadre structuré permettant une exploitation optimale de cette masse de données. C’est dans ce contexte que mettre en place un Indice numérique avancé de conjoncture macroéconomique vise à proposer une approche innovante en Afrique francophone. Le DMPI est <strong>un outil complémentaire aux statistiques traditionnelles</strong>, permettant aux décideurs publics, aux entreprises et aux analystes de mieux anticiper l’évolution de l’économie, notamment en période de chocs ou d’incertitude.
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+<strong>2. Composition de l’indice</strong>
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Le DMPI combine trois sous-indicateurs complémentaires :
+</p>
+<ul style="text-align: justify; font-size: 20px; line-height: 1.8;margin-left: 20px;">
+<li>
+<strong>l’Indice d’Anxiété Inflationniste (IAI)</strong> : mesure les préoccupations liées à la hausse des prix ;
+</li>
+<li>
+<strong>l’Indice d’Optimisme de Croissance (IOC)</strong>: capte les perceptions relatives aux perspectives d’activité économique ;
+</li>
+<li>
+<strong>le Baromètre du Développement Institutionnel Perçu (BDIP)</strong>: reflète la perception du développement institutionnel et du climat socio-économique.
+</li>
+</ul>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+<strong>2. Sources de données</strong>
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Le DMPI repose principalement sur deux types de données numériques :
+</p>
+<ul style="text-align: justify; font-size: 20px; line-height: 1.8;margin-left: 20px;">
+<li>
+<strong>Les données de recherche en ligne</strong>, qui reflètent la popularité relative de certaines requêtes effectuées sur les moteurs de recherche.
+</li>
+<li>
+<strong>Les contenus de la presse numérique</strong>, analysés grâce aux techniques <strong>de traitement automatique du langage naturel (NLP)</strong>, afin d’identifier les tonalités économiques (optimisme, pessimisme ou incertitude) présentes dans l’actualité.
+</li>
+</ul>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+<strong>4. Intérêt et limites</strong>
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Le DMPI permet d’<strong>identifier rapidement les signaux émergents de l’économie</strong>, en capturant les perceptions et comportements des acteurs en temps réel.
+</p>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+Cependant, la précision de l’indicateur dépend de certains facteurs structurels tels que :
+</p>
+<ul style="text-align: justify; font-size: 20px; line-height: 1.8;margin-left: 20px;">
+<li>
+le niveau de pénétration d’internet ;
+</li>
+<li>
+l’intensité de l’usage du numérique ;
+</li>
+<li>
+la disponibilité et la diversité des contenus médiatiques.
+</li>
+</ul>
+<p style="text-align: justify; font-size: 20px; line-height: 1.6;">
+En résumé, le DMPI doit être interprété comme un <strong>indicateur de sentiment et d’anticipation économique</strong>, venant compléter les statistiques officielles plutôt que s’y substituer.
+</p>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div></div><aside id="bslib-sidebar-1" class="sidebar html-fill-container html-fill-item"><div class="html-fill-item html-fill-container">
+<section id="section" height="40%">
+<div class="h3">
+
+</div>
+<div class="dmpi-network">
+<canvas id="network-canvas">
+</canvas>
+<div class="logo-box">
+<img src="dmpilogo211.png" class="dmpi-logo">
+<div class="dmpi-title">
+
+</div>
+</div>
+</div>
+</section>
+<section id="section-1" height="30%">
+<div class="h3">
+
+</div>
+</section>
+<section id="contact" height="30%">
+<div class="h3">
+Contact
+</div>
+<p><i class="bi bi-envelope-arrow-up"></i> <a href="mailto:tanoh.ghislain.gt@gmail.com"><strong>Suggestions</strong></a></p>
+<p><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/ghislain-tanoh-521a2967"><strong>LinkedIn</strong></a></p>
+<p><i class="bi bi-file-text-fill"></i> <a href="apropos_DMPI.pdf"><strong>À propos du DMPI</strong></a></p>
+</section>
+</div></aside>
+<button class="collapse-toggle" type="button" title="Toggle sidebar" aria-expanded="true" aria-controls="bslib-sidebar-1">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" class="bi bi-chevron-left collapse-icon" style="fill:currentColor;" aria-hidden="true" role="img">
+      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+    </svg>
+</button>
+<script data-bslib-sidebar-init="">
+bslib.Sidebar.initCollapsibleAll()
+</script>
+</div>
+</div>
+<div id="inflation-iai" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-inflation-iai">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 80fr) minmax(3em, 20fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 50fr) minmax(3em, 50fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-2219048bd7d6d3611c3c" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-2219048bd7d6d3611c3c">{"x":{"data":[{"x":[16801,16847.632911392404,16894.265822784811,16940.898734177215,16987.531645569619,17034.164556962027,17080.797468354431,17127.430379746835,17174.063291139242,17220.696202531646,17267.32911392405,17313.962025316454,17360.594936708861,17407.227848101265,17453.860759493669,17500.493670886077,17547.126582278481,17593.759493670885,17640.392405063292,17687.025316455696,17733.6582278481,17780.291139240508,17826.924050632912,17873.556962025315,17920.189873417723,17966.822784810127,18013.455696202531,18060.088607594938,18106.721518987342,18153.354430379746,18199.987341772154,18246.620253164558,18293.253164556962,18339.886075949365,18386.518987341773,18433.151898734177,18479.784810126581,18526.417721518988,18573.050632911392,18619.683544303796,18666.316455696204,18712.949367088608,18759.582278481012,18806.215189873419,18852.848101265823,18899.481012658227,18946.113924050631,18992.746835443038,19039.379746835442,19086.012658227846,19132.645569620254,19179.278481012658,19225.911392405062,19272.544303797469,19319.177215189873,19365.810126582277,19412.443037974685,19459.075949367088,19505.708860759492,19552.3417721519,19598.974683544304,19645.607594936708,19692.240506329115,19738.873417721519,19785.506329113923,19832.139240506331,19878.772151898735,19925.405063291139,19972.037974683546,20018.67088607595,20065.303797468354,20111.936708860761,20158.569620253165,20205.202531645569,20251.835443037973,20298.468354430381,20345.101265822785,20391.734177215189,20438.367088607596,20485],"y":[7.1880673701323481,6.7094501913330715,6.2520653770849837,5.8167882699015117,5.4044942122959725,5.0160585467816956,4.6523566158720913,4.3142637620804862,4.0026553279202099,3.7184066559046673,3.4624506136555686,3.2364702587016208,3.0392709545420091,2.8686350190715704,2.7223447701850905,2.5981825257773661,2.4939306037432183,2.4073713219774411,2.3362869983748329,2.2784599508302081,2.2368564606403103,2.2460520144698193,2.3047597932399553,2.4031013316492786,2.5311981643963639,2.6791718261797541,2.8371438516980225,2.9952357756497436,3.1435691327334556,3.2722654576477348,3.389309604282146,3.5473503294421866,3.7409192237635756,3.9590200772388426,4.1906566798605356,4.424832821621143,4.6505522925132103,4.8568188825292831,5.032636381661856,5.1670085799034746,5.274882526052262,5.395586747884181,5.5204905552156385,5.6397471841902043,5.7435098709514154,5.8219318516428427,5.8651663624080443,5.8633666393905761,5.8066859187339954,5.685277436581865,5.4893473738081271,5.2179416318066192,4.8850077641272982,4.5057942082559626,4.0955494016784995,3.6695217818807118,3.2429597863483957,2.8311118525674455,2.4492264180236583,2.1125519202028382,1.8205993134840792,1.5227090919415771,1.2150030871060074,0.89912306311944135,0.57671078412387866,0.24940801426131709,-0.081143482326169081,-0.41330194149658117,-0.74542559910792283,-1.0758726910181182,-1.4028870876705803,-1.7259298746132177,-2.0458149539855817,-2.3633799186387217,-2.6794623614236612,-2.9948998751914497,-3.310530052793061,-3.6271904870795444,-3.945718770901947,-4.2669524971112462],"text":["date: 16801.00<br />GA_calc:  7.18806737<br />colour: Tendance de l'IAI calculé","date: 16847.63<br />GA_calc:  6.70945019<br />colour: Tendance de l'IAI calculé","date: 16894.27<br />GA_calc:  6.25206538<br />colour: Tendance de l'IAI calculé","date: 16940.90<br />GA_calc:  5.81678827<br />colour: Tendance de l'IAI calculé","date: 16987.53<br />GA_calc:  5.40449421<br />colour: Tendance de l'IAI calculé","date: 17034.16<br />GA_calc:  5.01605855<br />colour: Tendance de l'IAI calculé","date: 17080.80<br />GA_calc:  4.65235662<br />colour: Tendance de l'IAI calculé","date: 17127.43<br />GA_calc:  4.31426376<br />colour: Tendance de l'IAI calculé","date: 17174.06<br />GA_calc:  4.00265533<br />colour: Tendance de l'IAI calculé","date: 17220.70<br />GA_calc:  3.71840666<br />colour: Tendance de l'IAI calculé","date: 17267.33<br />GA_calc:  3.46245061<br />colour: Tendance de l'IAI calculé","date: 17313.96<br />GA_calc:  3.23647026<br />colour: Tendance de l'IAI calculé","date: 17360.59<br />GA_calc:  3.03927095<br />colour: Tendance de l'IAI calculé","date: 17407.23<br />GA_calc:  2.86863502<br />colour: Tendance de l'IAI calculé","date: 17453.86<br />GA_calc:  2.72234477<br />colour: Tendance de l'IAI calculé","date: 17500.49<br />GA_calc:  2.59818253<br />colour: Tendance de l'IAI calculé","date: 17547.13<br />GA_calc:  2.49393060<br />colour: Tendance de l'IAI calculé","date: 17593.76<br />GA_calc:  2.40737132<br />colour: Tendance de l'IAI calculé","date: 17640.39<br />GA_calc:  2.33628700<br />colour: Tendance de l'IAI calculé","date: 17687.03<br />GA_calc:  2.27845995<br />colour: Tendance de l'IAI calculé","date: 17733.66<br />GA_calc:  2.23685646<br />colour: Tendance de l'IAI calculé","date: 17780.29<br />GA_calc:  2.24605201<br />colour: Tendance de l'IAI calculé","date: 17826.92<br />GA_calc:  2.30475979<br />colour: Tendance de l'IAI calculé","date: 17873.56<br />GA_calc:  2.40310133<br />colour: Tendance de l'IAI calculé","date: 17920.19<br />GA_calc:  2.53119816<br />colour: Tendance de l'IAI calculé","date: 17966.82<br />GA_calc:  2.67917183<br />colour: Tendance de l'IAI calculé","date: 18013.46<br />GA_calc:  2.83714385<br />colour: Tendance de l'IAI calculé","date: 18060.09<br />GA_calc:  2.99523578<br />colour: Tendance de l'IAI calculé","date: 18106.72<br />GA_calc:  3.14356913<br />colour: Tendance de l'IAI calculé","date: 18153.35<br />GA_calc:  3.27226546<br />colour: Tendance de l'IAI calculé","date: 18199.99<br />GA_calc:  3.38930960<br />colour: Tendance de l'IAI calculé","date: 18246.62<br />GA_calc:  3.54735033<br />colour: Tendance de l'IAI calculé","date: 18293.25<br />GA_calc:  3.74091922<br />colour: Tendance de l'IAI calculé","date: 18339.89<br />GA_calc:  3.95902008<br />colour: Tendance de l'IAI calculé","date: 18386.52<br />GA_calc:  4.19065668<br />colour: Tendance de l'IAI calculé","date: 18433.15<br />GA_calc:  4.42483282<br />colour: Tendance de l'IAI calculé","date: 18479.78<br />GA_calc:  4.65055229<br />colour: Tendance de l'IAI calculé","date: 18526.42<br />GA_calc:  4.85681888<br />colour: Tendance de l'IAI calculé","date: 18573.05<br />GA_calc:  5.03263638<br />colour: Tendance de l'IAI calculé","date: 18619.68<br />GA_calc:  5.16700858<br />colour: Tendance de l'IAI calculé","date: 18666.32<br />GA_calc:  5.27488253<br />colour: Tendance de l'IAI calculé","date: 18712.95<br />GA_calc:  5.39558675<br />colour: Tendance de l'IAI calculé","date: 18759.58<br />GA_calc:  5.52049056<br />colour: Tendance de l'IAI calculé","date: 18806.22<br />GA_calc:  5.63974718<br />colour: Tendance de l'IAI calculé","date: 18852.85<br />GA_calc:  5.74350987<br />colour: Tendance de l'IAI calculé","date: 18899.48<br />GA_calc:  5.82193185<br />colour: Tendance de l'IAI calculé","date: 18946.11<br />GA_calc:  5.86516636<br />colour: Tendance de l'IAI calculé","date: 18992.75<br />GA_calc:  5.86336664<br />colour: Tendance de l'IAI calculé","date: 19039.38<br />GA_calc:  5.80668592<br />colour: Tendance de l'IAI calculé","date: 19086.01<br />GA_calc:  5.68527744<br />colour: Tendance de l'IAI calculé","date: 19132.65<br />GA_calc:  5.48934737<br />colour: Tendance de l'IAI calculé","date: 19179.28<br />GA_calc:  5.21794163<br />colour: Tendance de l'IAI calculé","date: 19225.91<br />GA_calc:  4.88500776<br />colour: Tendance de l'IAI calculé","date: 19272.54<br />GA_calc:  4.50579421<br />colour: Tendance de l'IAI calculé","date: 19319.18<br />GA_calc:  4.09554940<br />colour: Tendance de l'IAI calculé","date: 19365.81<br />GA_calc:  3.66952178<br />colour: Tendance de l'IAI calculé","date: 19412.44<br />GA_calc:  3.24295979<br />colour: Tendance de l'IAI calculé","date: 19459.08<br />GA_calc:  2.83111185<br />colour: Tendance de l'IAI calculé","date: 19505.71<br />GA_calc:  2.44922642<br />colour: Tendance de l'IAI calculé","date: 19552.34<br />GA_calc:  2.11255192<br />colour: Tendance de l'IAI calculé","date: 19598.97<br />GA_calc:  1.82059931<br />colour: Tendance de l'IAI calculé","date: 19645.61<br />GA_calc:  1.52270909<br />colour: Tendance de l'IAI calculé","date: 19692.24<br />GA_calc:  1.21500309<br />colour: Tendance de l'IAI calculé","date: 19738.87<br />GA_calc:  0.89912306<br />colour: Tendance de l'IAI calculé","date: 19785.51<br />GA_calc:  0.57671078<br />colour: Tendance de l'IAI calculé","date: 19832.14<br />GA_calc:  0.24940801<br />colour: Tendance de l'IAI calculé","date: 19878.77<br />GA_calc: -0.08114348<br />colour: Tendance de l'IAI calculé","date: 19925.41<br />GA_calc: -0.41330194<br />colour: Tendance de l'IAI calculé","date: 19972.04<br />GA_calc: -0.74542560<br />colour: Tendance de l'IAI calculé","date: 20018.67<br />GA_calc: -1.07587269<br />colour: Tendance de l'IAI calculé","date: 20065.30<br />GA_calc: -1.40288709<br />colour: Tendance de l'IAI calculé","date: 20111.94<br />GA_calc: -1.72592987<br />colour: Tendance de l'IAI calculé","date: 20158.57<br />GA_calc: -2.04581495<br />colour: Tendance de l'IAI calculé","date: 20205.20<br />GA_calc: -2.36337992<br />colour: Tendance de l'IAI calculé","date: 20251.84<br />GA_calc: -2.67946236<br />colour: Tendance de l'IAI calculé","date: 20298.47<br />GA_calc: -2.99489988<br />colour: Tendance de l'IAI calculé","date: 20345.10<br />GA_calc: -3.31053005<br />colour: Tendance de l'IAI calculé","date: 20391.73<br />GA_calc: -3.62719049<br />colour: Tendance de l'IAI calculé","date: 20438.37<br />GA_calc: -3.94571877<br />colour: Tendance de l'IAI calculé","date: 20485.00<br />GA_calc: -4.26695250<br />colour: Tendance de l'IAI calculé"],"type":"scatter","mode":"lines","name":"Tendance de l'IAI calculé","line":{"width":3.0236220472440949,"color":"rgba(140,38,75,1)","dash":"dashdot"},"hoveron":"points","legendgroup":"Tendance de l'IAI calculé","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"},{"x":[16801,16832,16861,16892,16922,16953,16983,17014,17045,17075,17106,17136,17167,17198,17226,17257,17287,17318,17348,17379,17410,17440,17471,17501,17532,17563,17591,17622,17652,17683,17713,17744,17775,17805,17836,17866,17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20362,20393,20423,20454,20485],"y":[0.29152,0.86007999999999996,0.89183000000000001,2.0318000000000001,2.30945,0.86560999999999999,0.42043000000000003,-0.43035000000000001,0.65022000000000002,0.58687999999999996,0.37119000000000002,-0.21937999999999999,0.49393999999999999,0.62334000000000001,0.29021000000000002,-0.62466999999999995,-1.43926,-0.39563999999999999,0.32473000000000002,0.80384,1.41584,1.21221,0.94840999999999998,1.24614,0.57010000000000005,0.45569999999999999,0.33195000000000002,0.42720999999999998,0.71494000000000002,0.74777000000000005,0.41136,0.84624999999999995,0.65122999999999998,0.91508,0.81427000000000005,0.60216000000000003,0.76593999999999995,0.34759000000000001,0.57799,0.74046000000000001,0.84560999999999997,1.24281,1.1791400000000001,0.40027000000000001,0.50580999999999998,0.26939000000000002,1.24997,1.5660400000000001,1.99257,2.5718999999999999,2.4255100000000001,2.3481800000000002,2.3005200000000001,2.8090700000000002,2.734,2.7312799999999999,1.9259299999999999,3.0604800000000001,1.7417400000000001,2.3115199999999998,2.2877399999999999,3.2306900000000001,3.3386800000000001,3.8999000000000001,4.1821799999999998,3.54067,3.9207000000000001,4.7190799999999999,5.2137399999999996,4.4731300000000003,5.4987199999999996,5.5789200000000001,5.6015800000000002,4.5857700000000001,4.48001,4.02339,3.5209600000000001,5.4164099999999999,5.4109699999999998,6.1703000000000001,6.2797200000000002,6.33866,5.7314800000000004,5.2119200000000001,4.7969499999999998,4.8557300000000003,5.2151800000000001,5.2259000000000002,4.7910000000000004,4.1427199999999997,4.5551300000000001,3.6242999999999999,4.2320000000000002,3.5722700000000001,3.6672899999999999,3.86429,3.07531,3.5312800000000002,3.76823,3.6414200000000001,4.9219299999999997,4.0139800000000001,3.9681099999999998,4.5208700000000004,2.7791999999999999,2.6232500000000001,2.5457700000000001,2.0682399999999999,1.728247324,0.73303596299999996,0.51343259900000005,0.75853345500000002,-0.140876062,-0.56793215399999997,-0.84572246799999995,0.060112533000000003,-0.210684186,0.32343482699999998,0.040059998999999999,0.060112533000000003,1.4148799999999999,1.4148799999999999],"text":["date: 2016-01-01<br />GA_off:  0.29152000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-02-01<br />GA_off:  0.86008000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-03-01<br />GA_off:  0.89183000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-04-01<br />GA_off:  2.03180000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-05-01<br />GA_off:  2.30945000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-06-01<br />GA_off:  0.86561000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-07-01<br />GA_off:  0.42043000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-08-01<br />GA_off: -0.43035000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-09-01<br />GA_off:  0.65022000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-10-01<br />GA_off:  0.58688000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-11-01<br />GA_off:  0.37119000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2016-12-01<br />GA_off: -0.21938000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-01-01<br />GA_off:  0.49394000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-02-01<br />GA_off:  0.62334000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-03-01<br />GA_off:  0.29021000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-04-01<br />GA_off: -0.62467000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-05-01<br />GA_off: -1.43926000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-06-01<br />GA_off: -0.39564000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-07-01<br />GA_off:  0.32473000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-08-01<br />GA_off:  0.80384000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-09-01<br />GA_off:  1.41584000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-10-01<br />GA_off:  1.21221000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-11-01<br />GA_off:  0.94841000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2017-12-01<br />GA_off:  1.24614000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-01-01<br />GA_off:  0.57010000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-02-01<br />GA_off:  0.45570000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-03-01<br />GA_off:  0.33195000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-04-01<br />GA_off:  0.42721000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-05-01<br />GA_off:  0.71494000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-06-01<br />GA_off:  0.74777000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-07-01<br />GA_off:  0.41136000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-08-01<br />GA_off:  0.84625000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-09-01<br />GA_off:  0.65123000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-10-01<br />GA_off:  0.91508000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-11-01<br />GA_off:  0.81427000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2018-12-01<br />GA_off:  0.60216000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-01-01<br />GA_off:  0.76594000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-02-01<br />GA_off:  0.34759000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-03-01<br />GA_off:  0.57799000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-04-01<br />GA_off:  0.74046000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-05-01<br />GA_off:  0.84561000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-06-01<br />GA_off:  1.24281000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-07-01<br />GA_off:  1.17914000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-08-01<br />GA_off:  0.40027000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-09-01<br />GA_off:  0.50581000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-10-01<br />GA_off:  0.26939000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-11-01<br />GA_off:  1.24997000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2019-12-01<br />GA_off:  1.56604000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-01-01<br />GA_off:  1.99257000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-02-01<br />GA_off:  2.57190000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-03-01<br />GA_off:  2.42551000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-04-01<br />GA_off:  2.34818000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-05-01<br />GA_off:  2.30052000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-06-01<br />GA_off:  2.80907000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-07-01<br />GA_off:  2.73400000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-08-01<br />GA_off:  2.73128000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-09-01<br />GA_off:  1.92593000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-10-01<br />GA_off:  3.06048000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-11-01<br />GA_off:  1.74174000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2020-12-01<br />GA_off:  2.31152000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-01-01<br />GA_off:  2.28774000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-02-01<br />GA_off:  3.23069000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-03-01<br />GA_off:  3.33868000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-04-01<br />GA_off:  3.89990000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-05-01<br />GA_off:  4.18218000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-06-01<br />GA_off:  3.54067000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-07-01<br />GA_off:  3.92070000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-08-01<br />GA_off:  4.71908000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-09-01<br />GA_off:  5.21374000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-10-01<br />GA_off:  4.47313000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-11-01<br />GA_off:  5.49872000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2021-12-01<br />GA_off:  5.57892000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-01-01<br />GA_off:  5.60158000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-02-01<br />GA_off:  4.58577000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-03-01<br />GA_off:  4.48001000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-04-01<br />GA_off:  4.02339000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-05-01<br />GA_off:  3.52096000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-06-01<br />GA_off:  5.41641000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-07-01<br />GA_off:  5.41097000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-08-01<br />GA_off:  6.17030000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-09-01<br />GA_off:  6.27972000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-10-01<br />GA_off:  6.33866000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-11-01<br />GA_off:  5.73148000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2022-12-01<br />GA_off:  5.21192000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-01-01<br />GA_off:  4.79695000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-02-01<br />GA_off:  4.85573000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-03-01<br />GA_off:  5.21518000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-04-01<br />GA_off:  5.22590000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-05-01<br />GA_off:  4.79100000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-06-01<br />GA_off:  4.14272000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-07-01<br />GA_off:  4.55513000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-08-01<br />GA_off:  3.62430000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-09-01<br />GA_off:  4.23200000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-10-01<br />GA_off:  3.57227000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-11-01<br />GA_off:  3.66729000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2023-12-01<br />GA_off:  3.86429000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-01-01<br />GA_off:  3.07531000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-02-01<br />GA_off:  3.53128000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-03-01<br />GA_off:  3.76823000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-04-01<br />GA_off:  3.64142000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-05-01<br />GA_off:  4.92193000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-06-01<br />GA_off:  4.01398000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-07-01<br />GA_off:  3.96811000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-08-01<br />GA_off:  4.52087000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-09-01<br />GA_off:  2.77920000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-10-01<br />GA_off:  2.62325000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-11-01<br />GA_off:  2.54577000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2024-12-01<br />GA_off:  2.06824000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-01-01<br />GA_off:  1.72824732<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-02-01<br />GA_off:  0.73303596<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-03-01<br />GA_off:  0.51343260<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-04-01<br />GA_off:  0.75853346<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-05-01<br />GA_off: -0.14087606<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-06-01<br />GA_off: -0.56793215<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-07-01<br />GA_off: -0.84572247<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-08-01<br />GA_off:  0.06011253<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-09-01<br />GA_off: -0.21068419<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-10-01<br />GA_off:  0.32343483<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-11-01<br />GA_off:  0.04006000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2025-12-01<br />GA_off:  0.06011253<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2026-01-01<br />GA_off:  1.41488000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 2026-02-01<br />GA_off:  1.41488000<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(31,114,155,1)","dash":"solid"},"hoveron":"points","name":"Inflation officielle (ANStat-Côte d'Ivoire)","legendgroup":"Inflation officielle (ANStat-Côte d'Ivoire)","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"},{"x":[16801,16847.632911392404,16894.265822784811,16940.898734177215,16987.531645569619,17034.164556962027,17080.797468354431,17127.430379746835,17174.063291139242,17220.696202531646,17267.32911392405,17313.962025316454,17360.594936708861,17407.227848101265,17453.860759493669,17500.493670886077,17547.126582278481,17593.759493670885,17640.392405063292,17687.025316455696,17733.6582278481,17780.291139240508,17826.924050632912,17873.556962025315,17920.189873417723,17966.822784810127,18013.455696202531,18060.088607594938,18106.721518987342,18153.354430379746,18199.987341772154,18246.620253164558,18293.253164556962,18339.886075949365,18386.518987341773,18433.151898734177,18479.784810126581,18526.417721518988,18573.050632911392,18619.683544303796,18666.316455696204,18712.949367088608,18759.582278481012,18806.215189873419,18852.848101265823,18899.481012658227,18946.113924050631,18992.746835443038,19039.379746835442,19086.012658227846,19132.645569620254,19179.278481012658,19225.911392405062,19272.544303797469,19319.177215189873,19365.810126582277,19412.443037974685,19459.075949367088,19505.708860759492,19552.3417721519,19598.974683544304,19645.607594936708,19692.240506329115,19738.873417721519,19785.506329113923,19832.139240506331,19878.772151898735,19925.405063291139,19972.037974683546,20018.67088607595,20065.303797468354,20111.936708860761,20158.569620253165,20205.202531645569,20251.835443037973,20298.468354430381,20345.101265822785,20391.734177215189,20438.367088607596,20485],"y":[1.0079010314773809,0.91057921855644985,0.82105430521028877,0.73933614352165666,0.66543458557329083,0.59935948344793233,0.54112068922833589,0.4907280549972412,0.44819143283739032,0.4135206748315351,0.38673224822878971,0.3679985920713057,0.35734350132009896,0.35470143748231958,0.36000686206511456,0.37319423657563355,0.39419802252102265,0.4229526814084309,0.45939267474500955,0.50345246403790112,0.55531273200053843,0.61662352024032407,0.68727613281487898,0.76674903468877331,0.85452069082657989,0.95006956619285132,1.0528741257521603,1.1624128344690814,1.2781641573081635,1.3996065592339808,1.5324789395152931,1.6953658570921686,1.8831843067742589,2.0887814940827307,2.3050046245387672,2.5247009036635002,2.7407175369781136,2.9459017300037882,3.133100688261659,3.2951616172729081,3.4458365663013759,3.617891129660459,3.8049404884928046,3.999613857573002,4.1945404516755884,4.3823494855751566,4.5556701740462735,4.707131731863524,4.8293633738014536,4.9149943146346491,4.9593850209998358,4.9806712620112652,4.9839654705251535,4.9696592727552611,4.9381442949153476,4.8898121632191724,4.8250545038804908,4.7442629431130694,4.6478291071306641,4.5361446221470256,4.4092756937022655,4.2662473695407241,4.1070474649067288,3.931777733113361,3.740539927473669,3.5334358013006946,3.3105671079075285,3.0720356006072147,2.8179430327127908,2.5483911575373561,2.2634617813673623,1.9631285126267417,1.6473318173652229,1.316012334488603,0.96911070290269985,0.60656756151330593,0.22832354922629572,-0.16568069505253946,-0.5755045324174114,-1.0012073239624379],"text":["date: 16801.00<br />GA_off:  1.0079010<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 16847.63<br />GA_off:  0.9105792<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 16894.27<br />GA_off:  0.8210543<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 16940.90<br />GA_off:  0.7393361<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 16987.53<br />GA_off:  0.6654346<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17034.16<br />GA_off:  0.5993595<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17080.80<br />GA_off:  0.5411207<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17127.43<br />GA_off:  0.4907281<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17174.06<br />GA_off:  0.4481914<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17220.70<br />GA_off:  0.4135207<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17267.33<br />GA_off:  0.3867322<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17313.96<br />GA_off:  0.3679986<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17360.59<br />GA_off:  0.3573435<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17407.23<br />GA_off:  0.3547014<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17453.86<br />GA_off:  0.3600069<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17500.49<br />GA_off:  0.3731942<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17547.13<br />GA_off:  0.3941980<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17593.76<br />GA_off:  0.4229527<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17640.39<br />GA_off:  0.4593927<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17687.03<br />GA_off:  0.5034525<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17733.66<br />GA_off:  0.5553127<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17780.29<br />GA_off:  0.6166235<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17826.92<br />GA_off:  0.6872761<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17873.56<br />GA_off:  0.7667490<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17920.19<br />GA_off:  0.8545207<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 17966.82<br />GA_off:  0.9500696<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18013.46<br />GA_off:  1.0528741<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18060.09<br />GA_off:  1.1624128<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18106.72<br />GA_off:  1.2781642<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18153.35<br />GA_off:  1.3996066<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18199.99<br />GA_off:  1.5324789<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18246.62<br />GA_off:  1.6953659<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18293.25<br />GA_off:  1.8831843<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18339.89<br />GA_off:  2.0887815<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18386.52<br />GA_off:  2.3050046<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18433.15<br />GA_off:  2.5247009<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18479.78<br />GA_off:  2.7407175<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18526.42<br />GA_off:  2.9459017<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18573.05<br />GA_off:  3.1331007<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18619.68<br />GA_off:  3.2951616<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18666.32<br />GA_off:  3.4458366<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18712.95<br />GA_off:  3.6178911<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18759.58<br />GA_off:  3.8049405<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18806.22<br />GA_off:  3.9996139<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18852.85<br />GA_off:  4.1945405<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18899.48<br />GA_off:  4.3823495<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18946.11<br />GA_off:  4.5556702<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 18992.75<br />GA_off:  4.7071317<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19039.38<br />GA_off:  4.8293634<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19086.01<br />GA_off:  4.9149943<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19132.65<br />GA_off:  4.9593850<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19179.28<br />GA_off:  4.9806713<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19225.91<br />GA_off:  4.9839655<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19272.54<br />GA_off:  4.9696593<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19319.18<br />GA_off:  4.9381443<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19365.81<br />GA_off:  4.8898122<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19412.44<br />GA_off:  4.8250545<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19459.08<br />GA_off:  4.7442629<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19505.71<br />GA_off:  4.6478291<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19552.34<br />GA_off:  4.5361446<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19598.97<br />GA_off:  4.4092757<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19645.61<br />GA_off:  4.2662474<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19692.24<br />GA_off:  4.1070475<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19738.87<br />GA_off:  3.9317777<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19785.51<br />GA_off:  3.7405399<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19832.14<br />GA_off:  3.5334358<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19878.77<br />GA_off:  3.3105671<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19925.41<br />GA_off:  3.0720356<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 19972.04<br />GA_off:  2.8179430<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20018.67<br />GA_off:  2.5483912<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20065.30<br />GA_off:  2.2634618<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20111.94<br />GA_off:  1.9631285<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20158.57<br />GA_off:  1.6473318<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20205.20<br />GA_off:  1.3160123<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20251.84<br />GA_off:  0.9691107<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20298.47<br />GA_off:  0.6065676<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20345.10<br />GA_off:  0.2283235<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20391.73<br />GA_off: -0.1656807<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20438.37<br />GA_off: -0.5755045<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)","date: 20485.00<br />GA_off: -1.0012073<br />colour: Inflation officielle (ANStat-Côte d'Ivoire)"],"type":"scatter","mode":"lines","name":"Inflation officielle (ANStat-Côte d'Ivoire)","line":{"width":2.6456692913385824,"color":"rgba(31,114,155,1)","dash":"dot"},"hoveron":"points","legendgroup":"Inflation officielle (ANStat-Côte d'Ivoire)","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"}],"layout":{"margin":{"t":39.246160232461605,"r":7.3059360730593621,"b":21.585720215857201,"l":44.167704441677046},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Comparaison du signal de l'IAI et l'inflation réalisée <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243},"x":0.5,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[16616.799999999999,20669.200000000001],"tickmode":"array","ticktext":["2016","2018","2020","2022","2024","2026"],"tickvals":[16801,17532,18262,18993,19723,20454],"categoryorder":"array","categoryarray":["2016","2018","2020","2022","2024","2026"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":10.62681610626816},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-4.8397034904734255,7.7608183634945274],"tickmode":"array","ticktext":["-2.5","0.0","2.5","5.0","7.5"],"tickvals":[-2.5,0,2.5,5,7.5],"categoryorder":"array","categoryarray":["-2.5","0.0","2.5","5.0","7.5"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":10.62681610626816},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Glissement annuel (%) <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":11.955168119551683}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","x":0.5,"xanchor":"center","y":-0.20000000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"87c614a2438":{"x":{},"y":{},"colour":{},"type":"scatter"},"87cd2e1aff":{"x":{},"y":{},"colour":{}},"87c3da03ef1":{"x":{},"y":{},"colour":{}}},"cur_data":"87c614a2438","visdat":{"87c614a2438":["function (y) ","x"],"87cd2e1aff":["function (y) ","x"],"87c3da03ef1":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 60fr) minmax(3em, 40fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-title="Projection du signal de l'IAI" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Projection du signal de l’IAI
+</span></div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-e37423b32f98130bfd86" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-e37423b32f98130bfd86">{"x":{"data":[{"x":[19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20362,20393,20423,20454,20485],"y":[-8.0598824789470491,-0.0050952264182946303,-3.8715058500487398,-2.7936121992592899,-3.1914768501896602,-7.3427132445679097,-4.6865150949704697,-3.7223552582325801,-6.3312996114168802,-5.4212091661223498,-5.3385186030313498,-6.3283287967900499,0.24764783212605199,-6.4236333249251496,-3.51525263137769,-6.2984371707287403,-6.9639638314511298,-1.0234161271870399,-2.01024061261732,-0.96274666085975902,2.4716914406735202,0.72273805575102701,2.47469300576677,-3.9317251661413999,-1.53964657094338,4.6928559386070896],"text":["date1: 2024-01-01<br />GA_calcv1: -8.059882479<br />colour: Signal indice IAI","date1: 2024-02-01<br />GA_calcv1: -0.005095226<br />colour: Signal indice IAI","date1: 2024-03-01<br />GA_calcv1: -3.871505850<br />colour: Signal indice IAI","date1: 2024-04-01<br />GA_calcv1: -2.793612199<br />colour: Signal indice IAI","date1: 2024-05-01<br />GA_calcv1: -3.191476850<br />colour: Signal indice IAI","date1: 2024-06-01<br />GA_calcv1: -7.342713245<br />colour: Signal indice IAI","date1: 2024-07-01<br />GA_calcv1: -4.686515095<br />colour: Signal indice IAI","date1: 2024-08-01<br />GA_calcv1: -3.722355258<br />colour: Signal indice IAI","date1: 2024-09-01<br />GA_calcv1: -6.331299611<br />colour: Signal indice IAI","date1: 2024-10-01<br />GA_calcv1: -5.421209166<br />colour: Signal indice IAI","date1: 2024-11-01<br />GA_calcv1: -5.338518603<br />colour: Signal indice IAI","date1: 2024-12-01<br />GA_calcv1: -6.328328797<br />colour: Signal indice IAI","date1: 2025-01-01<br />GA_calcv1:  0.247647832<br />colour: Signal indice IAI","date1: 2025-02-01<br />GA_calcv1: -6.423633325<br />colour: Signal indice IAI","date1: 2025-03-01<br />GA_calcv1: -3.515252631<br />colour: Signal indice IAI","date1: 2025-04-01<br />GA_calcv1: -6.298437171<br />colour: Signal indice IAI","date1: 2025-05-01<br />GA_calcv1: -6.963963831<br />colour: Signal indice IAI","date1: 2025-06-01<br />GA_calcv1: -1.023416127<br />colour: Signal indice IAI","date1: 2025-07-01<br />GA_calcv1: -2.010240613<br />colour: Signal indice IAI","date1: 2025-08-01<br />GA_calcv1: -0.962746661<br />colour: Signal indice IAI","date1: 2025-09-01<br />GA_calcv1:  2.471691441<br />colour: Signal indice IAI","date1: 2025-10-01<br />GA_calcv1:  0.722738056<br />colour: Signal indice IAI","date1: 2025-11-01<br />GA_calcv1:  2.474693006<br />colour: Signal indice IAI","date1: 2025-12-01<br />GA_calcv1: -3.931725166<br />colour: Signal indice IAI","date1: 2026-01-01<br />GA_calcv1: -1.539646571<br />colour: Signal indice IAI","date1: 2026-02-01<br />GA_calcv1:  4.692855939<br />colour: Signal indice IAI"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(31,151,182,1)","dash":"solid"},"hoveron":"points","name":"Signal indice IAI","legendgroup":"Signal indice IAI","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"},{"x":[20485,20513,20544,20574],"y":[4.6928559386070896,1.47708570905032,1.1795356849213099,3.8007675449955198],"text":["date: 2026-02-01<br />GA_fc: 4.692856<br />colour: Prévisions","date: 2026-03-01<br />GA_fc: 1.477086<br />colour: Prévisions","date: 2026-04-01<br />GA_fc: 1.179536<br />colour: Prévisions","date: 2026-05-01<br />GA_fc: 3.800768<br />colour: Prévisions"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"rgba(214,39,40,1)","dash":"dash"},"hoveron":"points","name":"Prévisions","legendgroup":"Prévisions","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"},{"x":[20485,20513,20544,20574,20574,20574,20544,20513,20485,20485],"y":[4.6928559386070896,-4.7106526633397401,-6.4020756925999498,-4.5800152153231597,-4.5800152153231597,12.1815503053142,8.76114706244255,7.6648240814403996,4.6928559386070896,4.6928559386070896],"text":["date: 2026-02-01<br />lower:  4.692856<br />upper:  4.692856","date: 2026-03-01<br />lower: -4.710653<br />upper:  7.664824","date: 2026-04-01<br />lower: -6.402076<br />upper:  8.761147","date: 2026-05-01<br />lower: -4.580015<br />upper: 12.181550","date: 2026-05-01<br />lower: -4.580015<br />upper: 12.181550","date: 2026-05-01<br />lower: -4.580015<br />upper: 12.181550","date: 2026-04-01<br />lower: -6.402076<br />upper:  8.761147","date: 2026-03-01<br />lower: -4.710653<br />upper:  7.664824","date: 2026-02-01<br />lower:  4.692856<br />upper:  4.692856","date: 2026-02-01<br />lower:  4.692856<br />upper:  4.692856"],"type":"scatter","mode":"lines","line":{"width":1.8897637795275593,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,0,0,0.15)","hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"},{"x":[20485,20485],"y":[-9.0719541181601109,13.193621944527262],"text":"xintercept: 20485","type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(102,102,102,1)","dash":"longdash"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":23.305936073059364,"r":7.3059360730593621,"b":21.585720215857201,"l":33.54088833540888},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[19680.450000000001,20616.549999999999],"tickmode":"array","ticktext":["2024-01","2024-07","2025-01","2025-07","2026-01"],"tickvals":[19723,19905,20089,20270,20454],"categoryorder":"array","categoryarray":["2024-01","2024-07","2025-01","2025-07","2026-01"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":10.62681610626816},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-9.0719541181601109,13.193621944527262],"tickmode":"array","ticktext":["-5","0","5","10"],"tickvals":[-5,0,5,10],"categoryorder":"array","categoryarray":["-5","0","5","10"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":10.62681610626816},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Glissement annuel (%) <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":11.955168119551683}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","x":0.5,"xanchor":"center","y":-0.25},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"87c16075eda":{"x":{},"y":{},"colour":{},"type":"scatter"},"87c8fd1ae":{"x":{},"y":{},"colour":{}},"87c637b6e5":{"x":{},"ymin":{},"ymax":{}},"87c7ce9a03":{"xintercept":{}}},"cur_data":"87c16075eda","visdat":{"87c16075eda":["function (y) ","x"],"87c8fd1ae":["function (y) ","x"],"87c637b6e5":["function (y) ","x"],"87c7ce9a03":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-title="Commentaires" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Commentaires
+</span></div></div>
+<div class="cell card-body html-fill-item html-fill-container" data-title="commentaire de box IAI">
+<div class="cell-output-display html-fill-item html-fill-container">
+<span style="font-size:13px;text-align: justify;">Les perceptions de pressions inflationnistes, par rapport à la même période un an plus tôt, affichent une hausse. Cette progression des anticipations des agents économiques indiquent un éventuel maintien de l'inflation en territoire positif en    mars 2026. <br><br><b style=";font-weight:600;">Le glissement annuel de l'indice devrait passer de  4.7 % en février 2026 à 1.5 % en mars 2026.</b>  Soit une diminution de  <b style="color:#1f97b6;font-weight:600;">-3.2 point de pourcentage (pdp)</b> en mars 2026. Les signaux numériques manifestés par les agents économiques semblent indiquer une décélération de l'inflation (Hausse moins importante).</span>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box bg-secondary" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5 5" style="color:#0B538E;--bslib-color-fg:#0B538E;" data-full-screen="false">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="value-box-area html-fill-item html-fill-container">
+<div class="value-box-title html-fill-item html-fill-container"><span style="font-size:26px;text-align:center;">Signal prévue<div style="font-size:26px;text-align:center;" class="html-fill-item html-fill-container">en mars 2026</div></span></div>
+<div class="value-box-value html-fill-item html-fill-container"><div style="text-align:center" class="html-fill-item html-fill-container"><div style="font-size:26px;" class="html-fill-item html-fill-container">🔴 ▲+</div><span style="font-size:48px;font-weight:700;">1.5%</span></div></div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box bg-#FF6469 border" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5 5" style="color:#FFFFFF;background-color:#FF6469;--bslib-color-fg:#FFFFFF;--bslib-color-bg:#FF6469;" data-full-screen="false">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="value-box-area html-fill-item html-fill-container">
+<p class="value-box-title"></p>
+<div class="value-box-value html-fill-item html-fill-container"><div style="text-align:center" class="html-fill-item html-fill-container"><span style="font-size:35px;font-weight:500;">Anxiété d'inflation en hausse</span></div></div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="développement-bdip" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-développement-bdip">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 80fr) minmax(3em, 20fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 70fr) minmax(3em, 30fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card cell html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="plotly html-widget html-fill-item html-fill-container" id="htmlwidget-6017303f9c30600fbece" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-6017303f9c30600fbece">{"x":{"data":[{"x":[16436,16467,16495,16526,16556,16587,16617,16648,16679,16709,16740,16770,16801,16832,16861,16892,16922,16953,16983,17014,17045,17075,17106,17136,17167,17198,17226,17257,17287,17318,17348,17379,17410,17440,17471,17501,17532,17563,17591,17622,17652,17683,17713,17744,17775,17805,17836,17866,17897,17928,17956,17987,18017,18048,18078,18109,18140,18170,18201,18231,18262,18293,18322,18353,18383,18414,18444,18475,18506,18536,18567,18597,18628,18659,18687,18718,18748,18779,18809,18840,18871,18901,18932,18962,18993,19024,19052,19083,19113,19144,19174,19205,19236,19266,19297,19327,19358,19389,19417,19448,19478,19509,19539,19570,19601,19631,19662,19692,19723,19754,19783,19814,19844,19875,19905,19936,19967,19997,20028,20058,20089,20120,20148,20179,20209,20240,20270,20301,20332,20362,20393,20423,20454,20485],"y":[91.664657273952002,93.343721010474894,95.156747051379796,91.033466922608994,89.304686714659596,82.973238793340698,86.757127125418805,90.6085899165287,86.838989390678606,84.354679322996105,86.565111561388406,87.886633028695201,100.770601183525,102.103829067292,98.446740156694503,104.070206035361,98.771270435081604,95.889524293041703,96.613125685257401,89.495815107799899,93.639587309773802,94.025353850020906,94.5800930898926,83.996229594545596,85.394276737237803,96.688639966634199,99.032404288091797,90.740437824443305,86.353261288276798,87.519693972170899,87.332216869822005,85.310807457937202,86.2061442975901,91.485432142929596,91.213323094647706,89.764288154548495,97.540423486722702,93.732768262513005,99.940379679174299,97.729957212652707,93.969265465090899,85.413967718804102,80.836239547965405,84.025149665034505,89.608677111037693,90.568892600073397,96.546031003200795,91.095469397458601,94.186931036352703,93.458573308764201,100.612796804795,93.085628103220799,103.870466020823,87.765418960758694,92.894000287502493,87.863945558947094,93.849142992619207,104.08257719561099,102.947430326776,94.777863942966405,104.665018887909,97.552325845929403,100.850270266697,97.113208583626999,92.361193208939198,108.080530474074,105.146547495736,98.508515111736898,93.977326321555793,98.821255042721901,96.223288704616095,95.617701397452393,99.689615461770103,104.046304646945,100.908451582304,102.050442199804,107.39033908984101,98.661933049470207,93.745656322088607,91.718290054677595,95.968244867903493,99.9416279780243,106.927254302021,95.418263414336295,110.18718319068201,120.375874627708,129.54245101632901,114.415734460677,112.499172321925,109.474740690567,105.170297005469,101.56158034394301,95.4162098729051,116.07002724589699,116.228365143033,112.256067320898,121.085014975956,118.748418826492,127.75730340998901,112.447503038896,119.764405807328,111.40854224896501,101.92328485213601,104.171420838336,110.033071043508,114.873833806286,116.24973057280501,112.67388285701701,112.65608684472301,119.617206697109,111.389323464819,113.81173032160601,106.461861857155,100.67165188903699,103.99700513054,101.992769782024,103.694714529301,108.30707478033,112.810804365046,103.38826682755,109.67025557049099,109.903975022041,107.699041297302,97.899203385147501,98.042026247699894,99.2200998561581,99.929297810297101,102.295487469691,105.329607829989,106.386673943199,107.974074553504,98.499229610311701,98.688853679926794,113.61301170347301],"text":["mois: 2015-01-01<br />BDIP:  91.66466<br />colour: BDIP","mois: 2015-02-01<br />BDIP:  93.34372<br />colour: BDIP","mois: 2015-03-01<br />BDIP:  95.15675<br />colour: BDIP","mois: 2015-04-01<br />BDIP:  91.03347<br />colour: BDIP","mois: 2015-05-01<br />BDIP:  89.30469<br />colour: BDIP","mois: 2015-06-01<br />BDIP:  82.97324<br />colour: BDIP","mois: 2015-07-01<br />BDIP:  86.75713<br />colour: BDIP","mois: 2015-08-01<br />BDIP:  90.60859<br />colour: BDIP","mois: 2015-09-01<br />BDIP:  86.83899<br />colour: BDIP","mois: 2015-10-01<br />BDIP:  84.35468<br />colour: BDIP","mois: 2015-11-01<br />BDIP:  86.56511<br />colour: BDIP","mois: 2015-12-01<br />BDIP:  87.88663<br />colour: BDIP","mois: 2016-01-01<br />BDIP: 100.77060<br />colour: BDIP","mois: 2016-02-01<br />BDIP: 102.10383<br />colour: BDIP","mois: 2016-03-01<br />BDIP:  98.44674<br />colour: BDIP","mois: 2016-04-01<br />BDIP: 104.07021<br />colour: BDIP","mois: 2016-05-01<br />BDIP:  98.77127<br />colour: BDIP","mois: 2016-06-01<br />BDIP:  95.88952<br />colour: BDIP","mois: 2016-07-01<br />BDIP:  96.61313<br />colour: BDIP","mois: 2016-08-01<br />BDIP:  89.49582<br />colour: BDIP","mois: 2016-09-01<br />BDIP:  93.63959<br />colour: BDIP","mois: 2016-10-01<br />BDIP:  94.02535<br />colour: BDIP","mois: 2016-11-01<br />BDIP:  94.58009<br />colour: BDIP","mois: 2016-12-01<br />BDIP:  83.99623<br />colour: BDIP","mois: 2017-01-01<br />BDIP:  85.39428<br />colour: BDIP","mois: 2017-02-01<br />BDIP:  96.68864<br />colour: BDIP","mois: 2017-03-01<br />BDIP:  99.03240<br />colour: BDIP","mois: 2017-04-01<br />BDIP:  90.74044<br />colour: BDIP","mois: 2017-05-01<br />BDIP:  86.35326<br />colour: BDIP","mois: 2017-06-01<br />BDIP:  87.51969<br />colour: BDIP","mois: 2017-07-01<br />BDIP:  87.33222<br />colour: BDIP","mois: 2017-08-01<br />BDIP:  85.31081<br />colour: BDIP","mois: 2017-09-01<br />BDIP:  86.20614<br />colour: BDIP","mois: 2017-10-01<br />BDIP:  91.48543<br />colour: BDIP","mois: 2017-11-01<br />BDIP:  91.21332<br />colour: BDIP","mois: 2017-12-01<br />BDIP:  89.76429<br />colour: BDIP","mois: 2018-01-01<br />BDIP:  97.54042<br />colour: BDIP","mois: 2018-02-01<br />BDIP:  93.73277<br />colour: BDIP","mois: 2018-03-01<br />BDIP:  99.94038<br />colour: BDIP","mois: 2018-04-01<br />BDIP:  97.72996<br />colour: BDIP","mois: 2018-05-01<br />BDIP:  93.96927<br />colour: BDIP","mois: 2018-06-01<br />BDIP:  85.41397<br />colour: BDIP","mois: 2018-07-01<br />BDIP:  80.83624<br />colour: BDIP","mois: 2018-08-01<br />BDIP:  84.02515<br />colour: BDIP","mois: 2018-09-01<br />BDIP:  89.60868<br />colour: BDIP","mois: 2018-10-01<br />BDIP:  90.56889<br />colour: BDIP","mois: 2018-11-01<br />BDIP:  96.54603<br />colour: BDIP","mois: 2018-12-01<br />BDIP:  91.09547<br />colour: BDIP","mois: 2019-01-01<br />BDIP:  94.18693<br />colour: BDIP","mois: 2019-02-01<br />BDIP:  93.45857<br />colour: BDIP","mois: 2019-03-01<br />BDIP: 100.61280<br />colour: BDIP","mois: 2019-04-01<br />BDIP:  93.08563<br />colour: BDIP","mois: 2019-05-01<br />BDIP: 103.87047<br />colour: BDIP","mois: 2019-06-01<br />BDIP:  87.76542<br />colour: BDIP","mois: 2019-07-01<br />BDIP:  92.89400<br />colour: BDIP","mois: 2019-08-01<br />BDIP:  87.86395<br />colour: BDIP","mois: 2019-09-01<br />BDIP:  93.84914<br />colour: BDIP","mois: 2019-10-01<br />BDIP: 104.08258<br />colour: BDIP","mois: 2019-11-01<br />BDIP: 102.94743<br />colour: BDIP","mois: 2019-12-01<br />BDIP:  94.77786<br />colour: BDIP","mois: 2020-01-01<br />BDIP: 104.66502<br />colour: BDIP","mois: 2020-02-01<br />BDIP:  97.55233<br />colour: BDIP","mois: 2020-03-01<br />BDIP: 100.85027<br />colour: BDIP","mois: 2020-04-01<br />BDIP:  97.11321<br />colour: BDIP","mois: 2020-05-01<br />BDIP:  92.36119<br />colour: BDIP","mois: 2020-06-01<br />BDIP: 108.08053<br />colour: BDIP","mois: 2020-07-01<br />BDIP: 105.14655<br />colour: BDIP","mois: 2020-08-01<br />BDIP:  98.50852<br />colour: BDIP","mois: 2020-09-01<br />BDIP:  93.97733<br />colour: BDIP","mois: 2020-10-01<br />BDIP:  98.82126<br />colour: BDIP","mois: 2020-11-01<br />BDIP:  96.22329<br />colour: BDIP","mois: 2020-12-01<br />BDIP:  95.61770<br />colour: BDIP","mois: 2021-01-01<br />BDIP:  99.68962<br />colour: BDIP","mois: 2021-02-01<br />BDIP: 104.04630<br />colour: BDIP","mois: 2021-03-01<br />BDIP: 100.90845<br />colour: BDIP","mois: 2021-04-01<br />BDIP: 102.05044<br />colour: BDIP","mois: 2021-05-01<br />BDIP: 107.39034<br />colour: BDIP","mois: 2021-06-01<br />BDIP:  98.66193<br />colour: BDIP","mois: 2021-07-01<br />BDIP:  93.74566<br />colour: BDIP","mois: 2021-08-01<br />BDIP:  91.71829<br />colour: BDIP","mois: 2021-09-01<br />BDIP:  95.96824<br />colour: BDIP","mois: 2021-10-01<br />BDIP:  99.94163<br />colour: BDIP","mois: 2021-11-01<br />BDIP: 106.92725<br />colour: BDIP","mois: 2021-12-01<br />BDIP:  95.41826<br />colour: BDIP","mois: 2022-01-01<br />BDIP: 110.18718<br />colour: BDIP","mois: 2022-02-01<br />BDIP: 120.37587<br />colour: BDIP","mois: 2022-03-01<br />BDIP: 129.54245<br />colour: BDIP","mois: 2022-04-01<br />BDIP: 114.41573<br />colour: BDIP","mois: 2022-05-01<br />BDIP: 112.49917<br />colour: BDIP","mois: 2022-06-01<br />BDIP: 109.47474<br />colour: BDIP","mois: 2022-07-01<br />BDIP: 105.17030<br />colour: BDIP","mois: 2022-08-01<br />BDIP: 101.56158<br />colour: BDIP","mois: 2022-09-01<br />BDIP:  95.41621<br />colour: BDIP","mois: 2022-10-01<br />BDIP: 116.07003<br />colour: BDIP","mois: 2022-11-01<br />BDIP: 116.22837<br />colour: BDIP","mois: 2022-12-01<br />BDIP: 112.25607<br />colour: BDIP","mois: 2023-01-01<br />BDIP: 121.08501<br />colour: BDIP","mois: 2023-02-01<br />BDIP: 118.74842<br />colour: BDIP","mois: 2023-03-01<br />BDIP: 127.75730<br />colour: BDIP","mois: 2023-04-01<br />BDIP: 112.44750<br />colour: BDIP","mois: 2023-05-01<br />BDIP: 119.76441<br />colour: BDIP","mois: 2023-06-01<br />BDIP: 111.40854<br />colour: BDIP","mois: 2023-07-01<br />BDIP: 101.92328<br />colour: BDIP","mois: 2023-08-01<br />BDIP: 104.17142<br />colour: BDIP","mois: 2023-09-01<br />BDIP: 110.03307<br />colour: BDIP","mois: 2023-10-01<br />BDIP: 114.87383<br />colour: BDIP","mois: 2023-11-01<br />BDIP: 116.24973<br />colour: BDIP","mois: 2023-12-01<br />BDIP: 112.67388<br />colour: BDIP","mois: 2024-01-01<br />BDIP: 112.65609<br />colour: BDIP","mois: 2024-02-01<br />BDIP: 119.61721<br />colour: BDIP","mois: 2024-03-01<br />BDIP: 111.38932<br />colour: BDIP","mois: 2024-04-01<br />BDIP: 113.81173<br />colour: BDIP","mois: 2024-05-01<br />BDIP: 106.46186<br />colour: BDIP","mois: 2024-06-01<br />BDIP: 100.67165<br />colour: BDIP","mois: 2024-07-01<br />BDIP: 103.99701<br />colour: BDIP","mois: 2024-08-01<br />BDIP: 101.99277<br />colour: BDIP","mois: 2024-09-01<br />BDIP: 103.69471<br />colour: BDIP","mois: 2024-10-01<br />BDIP: 108.30707<br />colour: BDIP","mois: 2024-11-01<br />BDIP: 112.81080<br />colour: BDIP","mois: 2024-12-01<br />BDIP: 103.38827<br />colour: BDIP","mois: 2025-01-01<br />BDIP: 109.67026<br />colour: BDIP","mois: 2025-02-01<br />BDIP: 109.90398<br />colour: BDIP","mois: 2025-03-01<br />BDIP: 107.69904<br />colour: BDIP","mois: 2025-04-01<br />BDIP:  97.89920<br />colour: BDIP","mois: 2025-05-01<br />BDIP:  98.04203<br />colour: BDIP","mois: 2025-06-01<br />BDIP:  99.22010<br />colour: BDIP","mois: 2025-07-01<br />BDIP:  99.92930<br />colour: BDIP","mois: 2025-08-01<br />BDIP: 102.29549<br />colour: BDIP","mois: 2025-09-01<br />BDIP: 105.32961<br />colour: BDIP","mois: 2025-10-01<br />BDIP: 106.38667<br />colour: BDIP","mois: 2025-11-01<br />BDIP: 107.97407<br />colour: BDIP","mois: 2025-12-01<br />BDIP:  98.49923<br />colour: BDIP","mois: 2026-01-01<br />BDIP:  98.68885<br />colour: BDIP","mois: 2026-02-01<br />BDIP: 113.61301<br />colour: BDIP"],"type":"scatter","mode":"lines","line":{"width":4.1574803149606305,"color":"rgba(31,114,155,1)","dash":"solid"},"hoveron":"points","name":"BDIP","legendgroup":"BDIP","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"},{"x":[16436,16487.253164556962,16538.506329113923,16589.759493670885,16641.01265822785,16692.265822784811,16743.518987341773,16794.772151898735,16846.025316455696,16897.278481012658,16948.531645569619,16999.784810126581,17051.037974683546,17102.291139240508,17153.544303797469,17204.797468354431,17256.050632911392,17307.303797468354,17358.556962025315,17409.810126582277,17461.063291139242,17512.316455696204,17563.569620253165,17614.822784810127,17666.075949367088,17717.32911392405,17768.582278481012,17819.835443037973,17871.088607594938,17922.3417721519,17973.594936708861,18024.848101265823,18076.101265822785,18127.354430379746,18178.607594936708,18229.860759493669,18281.113924050635,18332.367088607596,18383.620253164558,18434.873417721519,18486.126582278481,18537.379746835442,18588.632911392404,18639.886075949369,18691.139240506331,18742.392405063292,18793.645569620254,18844.898734177215,18896.151898734177,18947.405063291139,18998.6582278481,19049.911392405062,19101.164556962027,19152.417721518988,19203.67088607595,19254.924050632912,19306.177215189873,19357.430379746835,19408.683544303796,19459.936708860761,19511.189873417723,19562.443037974685,19613.696202531646,19664.949367088608,19716.202531645569,19767.455696202531,19818.708860759492,19869.962025316454,19921.215189873419,19972.468354430381,20023.721518987342,20074.974683544304,20126.227848101265,20177.481012658227,20228.734177215189,20279.987341772154,20331.240506329115,20382.493670886077,20433.746835443038,20485],"y":[92.509667902406605,92.306281453903793,92.120805529100906,91.953164614713998,91.803283197459081,91.671085764052251,91.556496801209533,91.459440795646941,91.37984223408057,91.317625603226446,91.272827733090736,91.246052877769628,91.237451195116265,91.247080474954714,91.274998507109075,91.321263081403458,91.38593198766192,91.469063015708528,91.570713955367452,91.690942596462691,91.827434389452691,91.961393369875694,92.093663500779016,92.230309684941091,92.377396825140522,92.540989824155744,92.727153584765333,92.941953009747706,93.191453001881484,93.4817184639451,93.819727082076284,94.218331105403365,94.673202100340333,95.175607842555308,95.716816107716397,96.288094671491692,96.880711309549326,97.485933797557337,98.095029911183872,98.699267426097038,99.34072558922314,100.09623395989981,100.93846792084715,101.8376065311374,102.76382884984241,103.68731393603451,104.57824084878573,105.40678864716818,106.14313639025404,106.75746313711535,107.26263623830344,107.75609115915502,108.23452707174276,108.68814717536064,109.10715466930267,109.48175275286283,109.80214462533509,110.05853348601343,110.24112253419189,110.3401149691644,110.35881862811516,110.33606070397461,110.27265673565289,110.16568297273651,110.01221566481199,109.80933106146588,109.55410541228473,109.24361496685505,108.87493597476332,108.44514468559613,107.95209620122867,107.39873219034465,106.78669995299929,106.1171457651219,105.39121590264165,104.61005664148794,103.77481425758998,102.88663502687712,101.94666522527855,100.95605112872362],"text":["mois: 16436.00<br />BDIP:  92.50967<br />colour: BDIP_trend","mois: 16487.25<br />BDIP:  92.30628<br />colour: BDIP_trend","mois: 16538.51<br />BDIP:  92.12081<br />colour: BDIP_trend","mois: 16589.76<br />BDIP:  91.95316<br />colour: BDIP_trend","mois: 16641.01<br />BDIP:  91.80328<br />colour: BDIP_trend","mois: 16692.27<br />BDIP:  91.67109<br />colour: BDIP_trend","mois: 16743.52<br />BDIP:  91.55650<br />colour: BDIP_trend","mois: 16794.77<br />BDIP:  91.45944<br />colour: BDIP_trend","mois: 16846.03<br />BDIP:  91.37984<br />colour: BDIP_trend","mois: 16897.28<br />BDIP:  91.31763<br />colour: BDIP_trend","mois: 16948.53<br />BDIP:  91.27283<br />colour: BDIP_trend","mois: 16999.78<br />BDIP:  91.24605<br />colour: BDIP_trend","mois: 17051.04<br />BDIP:  91.23745<br />colour: BDIP_trend","mois: 17102.29<br />BDIP:  91.24708<br />colour: BDIP_trend","mois: 17153.54<br />BDIP:  91.27500<br />colour: BDIP_trend","mois: 17204.80<br />BDIP:  91.32126<br />colour: BDIP_trend","mois: 17256.05<br />BDIP:  91.38593<br />colour: BDIP_trend","mois: 17307.30<br />BDIP:  91.46906<br />colour: BDIP_trend","mois: 17358.56<br />BDIP:  91.57071<br />colour: BDIP_trend","mois: 17409.81<br />BDIP:  91.69094<br />colour: BDIP_trend","mois: 17461.06<br />BDIP:  91.82743<br />colour: BDIP_trend","mois: 17512.32<br />BDIP:  91.96139<br />colour: BDIP_trend","mois: 17563.57<br />BDIP:  92.09366<br />colour: BDIP_trend","mois: 17614.82<br />BDIP:  92.23031<br />colour: BDIP_trend","mois: 17666.08<br />BDIP:  92.37740<br />colour: BDIP_trend","mois: 17717.33<br />BDIP:  92.54099<br />colour: BDIP_trend","mois: 17768.58<br />BDIP:  92.72715<br />colour: BDIP_trend","mois: 17819.84<br />BDIP:  92.94195<br />colour: BDIP_trend","mois: 17871.09<br />BDIP:  93.19145<br />colour: BDIP_trend","mois: 17922.34<br />BDIP:  93.48172<br />colour: BDIP_trend","mois: 17973.59<br />BDIP:  93.81973<br />colour: BDIP_trend","mois: 18024.85<br />BDIP:  94.21833<br />colour: BDIP_trend","mois: 18076.10<br />BDIP:  94.67320<br />colour: BDIP_trend","mois: 18127.35<br />BDIP:  95.17561<br />colour: BDIP_trend","mois: 18178.61<br />BDIP:  95.71682<br />colour: BDIP_trend","mois: 18229.86<br />BDIP:  96.28809<br />colour: BDIP_trend","mois: 18281.11<br />BDIP:  96.88071<br />colour: BDIP_trend","mois: 18332.37<br />BDIP:  97.48593<br />colour: BDIP_trend","mois: 18383.62<br />BDIP:  98.09503<br />colour: BDIP_trend","mois: 18434.87<br />BDIP:  98.69927<br />colour: BDIP_trend","mois: 18486.13<br />BDIP:  99.34073<br />colour: BDIP_trend","mois: 18537.38<br />BDIP: 100.09623<br />colour: BDIP_trend","mois: 18588.63<br />BDIP: 100.93847<br />colour: BDIP_trend","mois: 18639.89<br />BDIP: 101.83761<br />colour: BDIP_trend","mois: 18691.14<br />BDIP: 102.76383<br />colour: BDIP_trend","mois: 18742.39<br />BDIP: 103.68731<br />colour: BDIP_trend","mois: 18793.65<br />BDIP: 104.57824<br />colour: BDIP_trend","mois: 18844.90<br />BDIP: 105.40679<br />colour: BDIP_trend","mois: 18896.15<br />BDIP: 106.14314<br />colour: BDIP_trend","mois: 18947.41<br />BDIP: 106.75746<br />colour: BDIP_trend","mois: 18998.66<br />BDIP: 107.26264<br />colour: BDIP_trend","mois: 19049.91<br />BDIP: 107.75609<br />colour: BDIP_trend","mois: 19101.16<br />BDIP: 108.23453<br />colour: BDIP_trend","mois: 19152.42<br />BDIP: 108.68815<br />colour: BDIP_trend","mois: 19203.67<br />BDIP: 109.10715<br />colour: BDIP_trend","mois: 19254.92<br />BDIP: 109.48175<br />colour: BDIP_trend","mois: 19306.18<br />BDIP: 109.80214<br />colour: BDIP_trend","mois: 19357.43<br />BDIP: 110.05853<br />colour: BDIP_trend","mois: 19408.68<br />BDIP: 110.24112<br />colour: BDIP_trend","mois: 19459.94<br />BDIP: 110.34011<br />colour: BDIP_trend","mois: 19511.19<br />BDIP: 110.35882<br />colour: BDIP_trend","mois: 19562.44<br />BDIP: 110.33606<br />colour: BDIP_trend","mois: 19613.70<br />BDIP: 110.27266<br />colour: BDIP_trend","mois: 19664.95<br />BDIP: 110.16568<br />colour: BDIP_trend","mois: 19716.20<br />BDIP: 110.01222<br />colour: BDIP_trend","mois: 19767.46<br />BDIP: 109.80933<br />colour: BDIP_trend","mois: 19818.71<br />BDIP: 109.55411<br />colour: BDIP_trend","mois: 19869.96<br />BDIP: 109.24361<br />colour: BDIP_trend","mois: 19921.22<br />BDIP: 108.87494<br />colour: BDIP_trend","mois: 19972.47<br />BDIP: 108.44514<br />colour: BDIP_trend","mois: 20023.72<br />BDIP: 107.95210<br />colour: BDIP_trend","mois: 20074.97<br />BDIP: 107.39873<br />colour: BDIP_trend","mois: 20126.23<br />BDIP: 106.78670<br />colour: BDIP_trend","mois: 20177.48<br />BDIP: 106.11715<br />colour: BDIP_trend","mois: 20228.73<br />BDIP: 105.39122<br />colour: BDIP_trend","mois: 20279.99<br />BDIP: 104.61006<br />colour: BDIP_trend","mois: 20331.24<br />BDIP: 103.77481<br />colour: BDIP_trend","mois: 20382.49<br />BDIP: 102.88664<br />colour: BDIP_trend","mois: 20433.75<br />BDIP: 101.94667<br />colour: BDIP_trend","mois: 20485.00<br />BDIP: 100.95605<br />colour: BDIP_trend"],"type":"scatter","mode":"lines","name":"BDIP_trend","line":{"width":2.6456692913385824,"color":"rgba(140,86,75,1)","dash":"dash"},"hoveron":"points","legendgroup":"BDIP_trend","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null,"hovertemplate":"%{y:.1f} <extra><\/extra>"}],"layout":{"margin":{"t":39.246160232461605,"r":7.3059360730593621,"b":21.585720215857201,"l":38.854296388542963},"paper_bgcolor":"rgba(255,255,255,1)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"<b> Baromètre du Développement Institutionnel Perçu  <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":15.940224159402243},"x":0.5,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[16233.549999999999,20687.450000000001],"tickmode":"array","ticktext":["2015","2020","2025"],"tickvals":[16436,18262,20089],"categoryorder":"array","categoryarray":["2015","2020","2025"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":10.62681610626816},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[78.400928974547227,131.97776158974719],"tickmode":"array","ticktext":["80","90","100","110","120","130"],"tickvals":[80,90,100,110,120,130],"categoryorder":"array","categoryarray":["80","90","100","110","120","130"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":10.62681610626816},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"<b> Niveau de l'indice <\/b>","font":{"color":"rgba(0,0,0,1)","family":"","size":11.955168119551683}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","layer":"below","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":true,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"orientation":"h","x":0.5,"xanchor":"center","y":-0.20000000000000001},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"87c739556d":{"x":{},"y":{},"colour":{},"type":"scatter"},"87c3a83fe7":{"x":{},"y":{},"colour":{}}},"cur_data":"87c739556d","visdat":{"87c739556d":["function (y) ","x"],"87c3a83fe7":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 40fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-title="Commentaire" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title"><span style="display: inline">
+Commentaire
+</span></div></div>
+<div class="cell card-body html-fill-item html-fill-container" data-title="commentaire de box BDIP">
+<div class="cell-output-display html-fill-item html-fill-container">
+<span style="font-size:15px;text-align: justify;">Comparé à la progression du mois précédent, le climat socio-économique et institutionnel est en amélioration en  février 2026. <br><br><b style=";font-weight:600;">La variation de l'indice est passé de  0.19 % en janvier 2026 à 15.12 % en février 2026.</b>  Soit une augmentation de + <b style="color:#1f97b6;font-weight:600;">14.9 point de pourcentage (pdp)</b> en février 2026.</span>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div>
+</div><div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr) minmax(3em, 1fr) minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box text-info border" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5 5" data-full-screen="false">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="value-box-area html-fill-item html-fill-container">
+<div class="value-box-title html-fill-item html-fill-container"><span style="font-size:26px;text-align:center;">Indice du mois<div style="font-size:26px;text-align:center;" class="html-fill-item html-fill-container"></div></span></div>
+<div class="value-box-value html-fill-item html-fill-container"><div style="text-align:center" class="html-fill-item html-fill-container"><div style="font-size:48px;font-weight:700;" class="html-fill-item html-fill-container">113.61</div></div></div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box bg-light" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5 5" style="color:#0B538E;--bslib-color-fg:#0B538E;" data-full-screen="false">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="value-box-area html-fill-item html-fill-container">
+<div class="value-box-title html-fill-item html-fill-container"><div style="text-align:center" class="html-fill-item html-fill-container"><span style="font-size:23px;font-weight:500;">En février 2026</span></div></div>
+<div class="value-box-value html-fill-item html-fill-container"><div style="text-align:center" class="html-fill-item html-fill-container"><div style="font-size:23px;" class="html-fill-item html-fill-container">🟢 ▲+</div><div style="font-size:23px;" class="html-fill-item html-fill-container"></div><span style="font-size:40px;font-weight:600;">15.12%</span></div></div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div class="card bslib-card bslib-mb-spacing html-fill-item html-fill-container bslib-value-box bg-success border" data-bslib-card-init="" data-require-bs-caller="card()" data-require-bs-version="5 5" style="color:#FFFFFF;background-color:success;--bslib-color-fg:#FFFFFF;--bslib-color-bg:success;" data-full-screen="false">
+<div class="card-body bslib-gap-spacing html-fill-item html-fill-container" style="margin-top:auto;margin-bottom:auto;flex:1 1 auto;">
+<div class="value-box-area html-fill-item html-fill-container">
+<p class="value-box-title"></p>
+<div class="value-box-value html-fill-item html-fill-container"><div style="text-align:center" class="html-fill-item html-fill-container"><span style="font-size:35px;font-weight:500;">Perception positive</span></div></div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+const canvas = document.getElementById("network-canvas");
+
+if(!canvas) return;
+
+
+
+const ctx = canvas.getContext("2d");
+
+
+
+canvas.width = canvas.offsetWidth;
+
+canvas.height = canvas.offsetHeight;
+
+
+
+let particles = [];
+
+const N = 30;
+
+
+
+const speed = 0.8;
+
+for(let i=0;i<N;i++){
+
+particles.push({
+
+x:Math.random()*canvas.width,
+
+y:Math.random()*canvas.height,
+
+vx:(Math.random()-0.5)*speed,
+
+vy:(Math.random()-0.5)*speed
+
+});
+
+}
+
+
+
+function draw(){
+
+
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+
+
+for(let i=0;i<particles.length;i++){
+
+
+
+let p = particles[i];
+
+
+
+p.x += p.vx;
+
+p.y += p.vy;
+
+
+
+if(p.x<0 || p.x>canvas.width) p.vx *= -1;
+
+if(p.y<0 || p.y>canvas.height) p.vy *= -1;
+
+
+
+ctx.beginPath();
+
+ctx.arc(p.x,p.y,2,0,Math.PI*2);
+
+ctx.fillStyle="#FFD700";
+
+ctx.fill();
+
+
+
+for(let j=i+1;j<particles.length;j++){
+
+
+
+let q = particles[j];
+
+
+
+let dx = p.x - q.x;
+
+let dy = p.y - q.y;
+
+
+
+let dist = Math.sqrt(dx*dx + dy*dy);
+
+
+
+if(dist < 90){
+
+
+
+ctx.beginPath();
+
+ctx.moveTo(p.x,p.y);
+
+ctx.lineTo(q.x,q.y);
+
+
+
+ctx.strokeStyle="rgba(0,200,255,0.2)";
+
+ctx.lineWidth=1;
+
+
+
+ctx.stroke();
+
+
+
+}
+
+
+
+}
+
+
+
+}
+
+
+
+requestAnimationFrame(draw);
+
+
+
+}
+
+
+
+draw();
+
+
+
+});
+
+
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /container fluid -->
+
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
+
+
+
+</body></html>

@@ -1,0 +1,195 @@
+/* Taille du logo */
+
+.quarto-navbar {
+  min-height: 85px !important;
+}
+
+.quarto-navbar .navbar-brand img {
+   transform: scale(1.5);
+  transform-origin: left center;
+  height: 75px !important;     /* 🔥 augmente ici */
+  max-height: none !important;
+  filter: drop-shadow(0 0 6px rgba(0, 200, 255, 0.6));
+}
+
+
+
+/* largeur sidebar */
+
+.sidebar {
+  width: 310px;
+  padding: 20px;
+}
+
+.bi-linkedin {
+  color: #0A66C2;
+  font-size: 28px;
+}
+
+.bi-linkedin:hover {
+  color: #ffffff;
+  background-color: #0A66C2;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+
+.bi-envelope-arrow-up {
+  color: #0dcaf0;
+  font-size: 28px;
+}
+
+.bi-envelope-arrow-up:hover {
+  color: #ffffff;
+  background-color: #0dcaf0;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+
+
+.bi-file-text-fill {
+  color: #ced4da;
+  font-size: 28px;
+}
+
+.bi-file-text-fill:hover {
+  color: #ffffff;
+  background-color: #ced4da;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+/*-- scss:rules --*/
+.card-header {
+  background-color: #0dcaf0;
+}
+
+.value-box.rose {
+  background-color :#fce4ec;
+  color: #000000;
+}
+
+.value-box-value {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.value-box {
+  text-align: center;
+  font-weight: bold;
+}
+
+.value-box-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.value-box-icon i {
+  font-size: 40px;
+}
+
+.value-box-subtitle {
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.bi-caret-up-fill {
+  color: #28a745;
+  font-size: 28px;
+}
+
+.bi-caret-down-fill {
+  color: #dc3545;
+  font-size: 28px;
+}
+
+
+.bi-dash {
+  color: blue;
+  font-size: 28px;
+}
+
+
+
+/* conteneur */
+
+.dmpi-network{
+  position:relative;
+  height:220px;
+  overflow:hidden;
+  border-radius:10px;
+  margin-bottom:22px;
+  background:#ffffff;
+}
+
+/* réseau neuronal au-dessus */
+
+#network-canvas{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index:3;
+  pointer-events:none;
+}
+
+/* logo en arrière-plan */
+
+.logo-box{
+  position:absolute;
+  width:100%;
+  height:100%;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  opacity:0.99;
+}
+
+.dmpi-logo{
+  width:140px;
+  filter:
+    drop-shadow(0 0 12px #ced4da)
+    drop-shadow(0 0 25px #ced4da);
+  animation: pulse 5s infinite;
+}
+
+.dmpi-title{
+ font-size:22px;
+  font-weight:700;
+  color:#0A66C2;
+  letter-spacing:2px;
+  margin-top:8px;
+  text-shadow:0 0 8px #ced4da;
+}
+
+/* animation respiration */
+@keyframes pulse{
+  0%{transform:scale(0.9)}
+  50%{transform:scale(1.2)}
+  100%{transform:scale(0.9)}
+}
+
+/* FONDS dynamique dans le sidebare */
+.sidebar{
+  background: linear-gradient(
+    120deg,
+    #ced4da,
+    #ffffff,
+    #00c8ff
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 7s ease infinite;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
